@@ -3,20 +3,19 @@
     --font-text: "Quicksand", sans-serif;
     --color-light: #f4f4f4;
     --color-blue-300: #32cbd6;
-    --color-blue900: #120d24;
+    --color-blue-900: #120d24;
     --color-purple-300: #d34cb6;
-    --bg-video: rgba(19,15,37,.8);
+    --bg-video: rgba(19, 15, 37, .8);
 }
-
-
+ 
 body {
     font-family: var(--font-text);
 }
-
-h1,h2,h3,h4,h5,h6{
+ 
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-title);
 }
-
+ 
 .color-blue-300{
     color: var(--color-blue-300);
 }
@@ -29,7 +28,7 @@ h1,h2,h3,h4,h5,h6{
     font-size: 40px;
     color: var(--color-light);
 }
-
+ 
 .navbar-brand:hover, .navbar-brand:focus {
     color: var(--color-light);
 }
@@ -56,43 +55,38 @@ h1,h2,h3,h4,h5,h6{
     color: var(--color-light);
 }
  
-.nav-item a:hover, .navbar-brand:focus {
+.nav-item a:hover, .nav-item a:focus {
     color: var(--color-blue-300);
 }
-
-/* fim do menu principal */
-
-/* video de fundo */
-.hero-page{
+ 
+/************************ fim do menu principal ************************/
+ 
+/************************ vídeo de fundo ************************/
+.hero-page {
     min-height: 100vh;
     position: relative;
-    top: 0;
-
+    top: 0;    
 }
-
-.hero-page::before{
-    content: none;
+ 
+.hero-page::before {
+    content: '';
     position: absolute;
-     /* inset cuida dos 4 valores -> top, bottom... */
     inset: 0;
     background-color: var(--bg-video);
-    /* ordenança de camadas z-index; */
     z-index: -1;
 }
-
-.hero-video{
+ 
+.hero-video {
     position: absolute;
     top: 0;
     left: 0;
     z-index: -2;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: cover;    
 }
-
-/* fim do video de fundo */
-
-.cta{
+/************************ fim formatação vídeo de fundo ********************/
+.cta {
     width: 90%;
     height: 80vh;
     margin: auto;
